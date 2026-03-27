@@ -37,7 +37,7 @@ body{
     margin-bottom: 10px;
 }
 
-.nav-items a :hover{
+.nav-items a  :hover{
     color: var(--hover-color);
 }
 
