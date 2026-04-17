@@ -3,11 +3,16 @@
   font-weight: 400;
   font-style: normal;
 }
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 :root {
-    --bg-color: #2A7B9B;
-    --hover-color: rgba(237, 221, 83, 1);
+    --bg-color: black;
+    --hover-color: #ffff00;
     --font-color: white;
-    --boxes-color: rgba(87, 199, 133, 1);
+    --boxes-color: red;
 }
 body{
     margin: 0;
@@ -73,7 +78,10 @@ body{
 }
 
 .main-page-h{
-    z-index: 1;
+    font-family: "Bebas Neue", sans-serif;
+    z-index: 10;
+    font-size: 15vh;
+    color: white;
 }
 
 .main-page{
@@ -86,14 +94,45 @@ body{
     width: 100vw;
     color: white;
 }
-.rectangle {
-  height: 60vh; 
-  position: absolute;
-  width: 98.5vw;
-  background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-  transform: skew(10deg) rotate(10deg);
-  z-index: 1;
+
+.cards{
+    opacity:50%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 70vw;
+    z-index: 2;
 }
+.card {
+   border: 2px solid black;
+   width: 20vw;
+   height: 50vh;
+   position: relative;
+   transform-style: preserve-3d;
+   transition: 2s ease;
+}
+.back-card,
+.front-card{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   backface-visibility: hidden;
+}
+.back-card{
+    z-index: 1;
+    
+}
+.front-card {
+   transform: rotateY(180deg);
+}
+
+.cards:hover .card {
+   transform: perspective(400px) rotateY(180deg);
+}
+
 
 .options-wrapper{
     background-color: var(--bg-color);
@@ -136,16 +175,6 @@ body{
 .options-h3
 {
     font-size:larger;
-}
-
-.rectangle-2 {
-  margin-top: 20vh;
-  height: 60vh; 
-  position: absolute;
-  width: 98.5vw;
-  background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-  transform: skew(-10deg) rotate(350deg);
-  z-index: 1;
 }
 
 
