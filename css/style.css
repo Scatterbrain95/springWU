@@ -6,7 +6,6 @@
 
 .playfair-display {
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
     font-style: normal;
 }
 
@@ -342,7 +341,7 @@ body {
 .review {
     background-color: var(--font-color2);
     width: 30%;
-    height: auto - 10%;
+    height: auto;
     min-height: 15vh;
     padding: 1vh;
     border-radius: 15px;
