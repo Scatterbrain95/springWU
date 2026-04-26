@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <title>4Play</title>
 </head>
@@ -13,92 +13,175 @@
 
   <nav class="navigation">
     <ul>
-      <li class="nav-items"><a href="#main">Main</a></li>
-      <li class="nav-items"><a href="#about">About website</a></li>
-      <li class="nav-items"><a href="#games">Games</a></li>
-      <li class="nav-items"><a href="#contact">Contact</a></li>
+      <li class="nav-items"><a href="index.html">Main</a></li>
+      <li class="nav-items"><a href="poker.html">Basics</a></li>
+      <li class="nav-items"><a href="tips.html">Tips & tricks</a></li>
+      <li class="nav-items"><a href="hands.html">Poker hands</a></li>
     </ul>
   </nav>
 
   <div class="fade-layer"></div>
   
   <div class="menu-button">
-    <i class="menu-icon"><b>¤</b></i>
+    <i class="menu-icon"><b>♦</b></i>
   </div>
 
 
-  <div class="main-page" id="main">
+  <div class="main-page">
     <h1 class="main-page-h"><b>Welcome to 4Play</b></h1>
-    <div class="cards">
-      <div class="card">
-        <img  class="front-card" src="img\playingcards_bridgesize_png\C-1.png" alt="">
-        <img class="back-card" src="img\playingcards_bridgesize_png\Back-R.png" alt="">
+    <div class="cards main-cards">
+      <div class="card main-card">
+        <img  class="front-card" src="img/playingcards_bridgesize_png/C-1.png" alt="">
+        <img class="back-card" src="img/playingcards_bridgesize_png/Back-R.png" alt="">
       </div>
-      <div class="card"> 
-        <img class="front-card" src="img\playingcards_bridgesize_png\D-1.png" alt="">
-        <img class="back-card" src="img\playingcards_bridgesize_png\Back-R.png" alt="">
+      <div class="card main-card"> 
+        <img class="front-card" src="img/playingcards_bridgesize_png/D-1.png" alt="">
+        <img class="back-card" src="img/playingcards_bridgesize_png/Back-R.png" alt="">
       </div>
-      <div class="card"> 
-        <img class="front-card" src="img\playingcards_bridgesize_png\S-1.png" alt="">
-        <img class="back-card" src="img\playingcards_bridgesize_png\Back-R.png" alt="">
+      <div class="card main-card"> 
+        <img class="front-card" src="img/playingcards_bridgesize_png/S-1.png" alt="">
+        <img class="back-card" src="img/playingcards_bridgesize_png/Back-R.png" alt="">
       </div>
-      <div class="card">
-        <img class="front-card" src="img\playingcards_bridgesize_png\H-1.png" alt="">
-        <img class="back-card" src="img\playingcards_bridgesize_png\Back-R.png" alt="">
+      <div class="card main-card">
+        <img class="front-card" src="img/playingcards_bridgesize_png/H-1.png" alt=""> 
+        <img class="back-card" src="img/playingcards_bridgesize_png/Back-R.png" alt="">
       </div>
     </div>
-    
-  
-    <!-- Don't forget to add more here, some animations and some indviduality -->
 
   </div>
 
 
-  <div class="options-wrapper" id="about">
-    <h2 class="options-h">Aboout Us</h2>
-    <div class="options-items">
-      <div class="options-item">
-        <h3 class="options-h3">It's Free</h3>
-        <p class="options-p">Well everyone loves free stuff.</p>
+  <div class="wrapper" id="about">
+
+    <div id="about-intro">
+      <h2 class="h-about">
+        Learn how to <span class="highlight">play</span> and <span class="highlight">improve</span>
+      </h2>
+
+      <div class="about-line"></div>
+
+      <p class="p-about">
+        Everybody enjoys a good game of cards. No matter if it's with your homies and friends in your friend's basement or gambling at a casino. But we all want to win, and we are here to teach you how to win. But it's important to also know that it's all of education purposes and nothing more
+      </p>
+    </div>
+
+    <div id="game">
+      <h2 id="h2-about">What guides do we have for poker</h2>
+
+      <div class="cards" id="about-cards">
+
+        <div class="card about-card" >
+          <div class="front-card"> 
+            <h2>Basics</h2>
+            <p>New to poker? This section covers the fundamentals you need to start playing. Learn how the game works, the basic rules, and what happens during a round. It’s a quick and easy way to understand the flow of the game before moving on to strategy.</p>
+          </div>
+          <img class="back-card" src="img/playingcards_bridgesize_png/Back-R.png" alt="">
+        </div>
+
+        <div class="card about-card" >
+          <div class="front-card">
+            <h2>Poker hands</h2>
+            <p>Not sure which hands are strong or weak? Here you’ll find all poker hand rankings explained from best to worst. Knowing your hands is essential, since every decision you make depends on how strong your cards are.</p>
+          </div>
+          <img class="back-card" src="img/playingcards_bridgesize_png/Back-R.png" alt="">
+        </div>
+
+        <div class="card about-card" >
+          <div class="front-card">
+            <h2>Tips and Tricks</h2>
+            <p>Want to improve your game? This section gives you simple but effective tips to play smarter. Learn how to avoid common mistakes, make better decisions, and gain an edge over other players.</p>
+          </div>
+          <img class="back-card" src="img/playingcards_bridgesize_png/Back-R.png" alt="">
+        </div>
+
       </div>
-      <div class="options-item">
-        <h3 class="options-h3">GAMBLING</h3>
-        <p class="options-p">GAMBLINGLOL!!LO!!</p>
-      </div>
-      <div class="options-item">
-        <h3 class="options-h3">Completely Legal</h3>
-        <p class="options-p">Legal blah balh blah</p>
-      </div>
+    </div>
+
+
+    <div id="learn">
+      <h2 class="h-about">What <span class="highlight">you</span> will learn ?</h2>
+      <div class="about-line"></div>
+      <p class="p-about">You will learn the basics and essentials of the games. Later on, we move on to the tips and tricks to help you have the upper hands against your opponents. Of course it will take time to be and expert, but with enough time and patience and mischievousness you will be crushing your friends</p>
     </div>
   </div>
 
+  <div class="wrapper" id="benefits-wrapper">
 
-  <div class="options-wrapper" id="games">
-    <h2 class="options-h">Games</h2>
-    <div class="options-items">
-      <div class="options-item">
-        <h3 class="options-h3">Black jack</h3>
-        <p class="options-p">First who gets to number 21 wins (or closer to number 21).</p>
+      <div id="reasons-for-why">
+
+        <div id="header-benefits">
+          <h1 id="h-main-benefit">Reasons for why you should actually give our website a chance</h1>
+          <p id="p-main-benefit">But why you should really give our website a chance ?</p>
+        </div>
+
+        <div id="benefits">
+          <div class="benefit">
+            <h2 class="h-benefit"><b>1 . Made and reviewed by experts.</b></h2>
+            <div class="about-line"></div>
+            <p class="p-benefit">This website has been made by many gambling experts who devote their life to these games.</p>
+          </div>
+
+          <div class="benefit">
+            <h2 class="h-benefit"><b>2 . Great reviews from our users.</b></h2>
+            <div class="about-line"></div>
+            <p class="p-benefit">We have shared some of the reviews of our users who found our website really useful.</p>
+          </div>
+
+          <div class="benefit">
+            <h2 class="h-benefit"><b>3 . Completely free for everyone.</b></h2>
+            <div class="about-line"></div>
+            <p class="p-benefit">This website does not benefit in any commercial way and it's on available for enjoyment of our users.</p>
+          </div>
+        </div>
       </div>
-      <div class="options-item">
-        <h3 class="options-h3">Slot machine</h3>
-        <p class="options-p">GAMBLINGv2</p>
+
+      <div id="reviews">
+        <h1></h1>
+        <div class="review">
+
+          <h2 class="user"> <span class="symbols black">♣</span> MasterPoker67</h2>
+          <p class="user-review">I've been living my life in Los Vegas after visitng this website and learning poker and all those tricks. Might have been cheating as well but well you know what they say. You're not cheating if you've never been caught. 
+            Might as well say it's the best website ever. And at last 676767676767!
+          </p>
+
+        </div>
+        <div class="review">
+
+          <h2 class="user"> <span class="symbols red">♦</span> The0lddSh1ttyGuy</h2>
+          <p class="user-review">Heh winning against my pals after some beer during a poker and winning their money is amazing.</p>
+
+        </div>
+        <div class="review">
+
+          <h2 class="user"> <span class="symbols black">♠</span> JackBlackOfficial</h2>
+          <p class="user-review"> Jack Black approved 👍.</p>
+
+        </div>
+        <div class="review">
+
+          <h2 class="user"> <span class="symbols red">♥</span> Junkler</h2>
+          <p class="user-review">I love taking cocaine after winning a match of poker.</p>
+
+        </div>
+        
       </div>
-    </div>
   </div>
 
-  <div class="contact-wrapper" id="contact">
-    <div class="follow">
-      <h3>Follow us</h3>
-      <a href=""><img src="img/instagram.png" alt=""></a>
-      <a href=""><img src="img/tik-tok.png" alt=""></a>
-    </div>
-    <div class="contact-list-">
-      <h3>Contacts</h3>
-      <p>Email: 4play@4contact.se</p>
-      <p>Number: (336) 494-6281</p>
-    </div>
+
+
+  <div class="wrapperr" id="contact">
+      <div class="follow">
+          <h3 class="contact-header">Follow us</h3>
+          <a href=""><img src="img/instagram.png" alt="" class="contact-image"></a>
+          <a href=""><img src="img/tik-tok.png" alt="" class="contact-image"></a>
+      </div>
+      <div class="contact-list-">
+          <h3 class="contact-header">Contacts</h3>
+          <p class="contact-text">Email: 4play@4contact.se</p>
+          <p class="contact-text">Number: (336) 494-6281</p>
+      </div>
   </div>
-  <script src="js\main.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
